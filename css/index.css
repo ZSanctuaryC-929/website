@@ -1,0 +1,401 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+body, p {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    margin: 0;
+}
+
+blockquote p {
+    font-style: italic;
+    border-left: 3px solid #871100;
+}
+
+blockquote {
+    margin-left: 0;
+}
+
+blockquote footer {
+    color: #b5b5b5;
+    font-size: 1.2em;
+    background-position: 0 12px;
+    text-indent: 2em;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+tr {
+    background: url(../img/table-border.png);
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+h2 {
+    border-left: solid 10px #871100;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0 15px -30px;
+    padding-left: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+h3 {
+    font-size: 16px;
+    color: #333;
+    line-height: 1;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    font-weight: 500;
+    margin: 0;
+}
+
+i {
+    margin-right: 4px;
+    vertical-align: 2px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+button {
+    background-color: #C9948D;
+    width: 90px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-size: 1.5em;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+}
+
+button a {
+    color: #fff;
+}
+
+button.rg {
+    background-color: #7ca0ae;
+}
+
+.inner {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*页眉区*/
+#header {
+    height: 100px;
+    background-color: #f5edeb;
+}
+
+/*居中 固定宽度 设置好背景*/
+#header .inner {
+    height: 100px;
+    background: url(../img/head-b.jpg) no-repeat;
+    background-size: 75%;
+}
+
+/*导航区*/
+#naver {
+    height: 41px;
+    background-color: #C9948D;
+}
+
+/**导航区细节**/
+.nav :hover {
+    border-color: #C9948D;
+    background: #871100;
+}
+
+.nav-con {
+    float: left;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.nav-con a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.nav-name {
+    padding: 0 25px;
+    line-height: 41px;
+}
+
+/*栏目区1*/
+#content-1 {
+    background-color: #eaeaea;
+}
+
+#content-1 .inner {
+    padding-top: 25px;
+    height: 300px;
+    background: url(../img/con-1.jpg) no-repeat;
+    background-size: 82%;
+}
+
+#content-1 p {
+    text-indent: 2em;
+}
+
+/*介绍部分*/
+.intro {
+    margin-left: 14px;
+}
+
+.brief {
+    width: 500px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    float: left;
+}
+
+/*栏目区2*/
+#content-2 .inner {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    height: 910px;
+}
+
+.main-con {
+    width: 640px;
+    padding: 29px 29px 0;
+    float: left;
+    position: relative;
+}
+
+#content-2 .main-con p {
+    text-indent: 2em;
+    margin: 10px;
+    width: 600px;
+}
+
+/*以下是表格区的内容 分为左右两个表格*/
+.table-1 {
+    float: left;
+}
+
+.item-name {
+    line-height: 26px;
+    display: block;
+    margin: 0;
+    float: left;
+    width: 60px;
+    padding: 0 5px 0 12px;
+    font-weight: 700;
+    overflow: hidden;
+    word-wrap: normal;
+    color: #999;
+}
+
+br {
+    line-height: 29px;
+}
+
+.item-value {
+    color: #333;
+    width: 220px;
+    float: left;
+    position: relative;
+    word-break: break-all;
+    line-height: 26px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/*以下是图片展示区*/
+.mod-photo {
+    position: relative;
+    margin: 0;
+}
+
+.diary-item {
+    float: left;
+    margin: 0 5px 12px 0;
+}
+
+.diary-photo {
+    display: block;
+    top: 0px;
+    width: 155px;
+    height: 155px;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.diary-photo img {
+    width: 100%;
+}
+
+.diary-title {
+    position: relative;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    border-width: 1px;
+    border-color: #e6e6e6;
+    border-style: solid;
+}
+
+.diary-title a {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*边栏区，使用相对位置*/
+.side-con {
+    position: relative;
+    float: right;
+    border: 1px solid #e5e5e5;
+    margin: 40px 25px 0 0;
+    width: 270px;
+}
+
+/*边栏区的第一部分设置为一个头像框加姓名
+    为保持整体性并且不失多样性，在四个页面中边栏区格式相同内容不同*/
+.side-con-1 {
+    padding: 14px 14px 14px 14px;
+    background-color: #fff;
+}
+
+.photo {
+    position: relative;
+    margin: 10px auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    top: 2px;
+    left: 2px;
+    background-color: #871100;
+}
+
+.photo-1 {
+    position: absolute;
+    width: 60px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+.myname {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+.class {
+    color: #999;
+    margin-top: 3px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+
+/*边栏区2*/
+.side-con-2 {
+    height: 170px;
+    padding: 14px 14px 14px 14px;
+    background-color: #f5f5f5;
+}
+
+/*边栏区2的列表，格式为上下，包含圆形头像和内容
+    在首页上做成了寝室信息介绍*/
+.roommate-item .photo {
+    width: 44px;
+    height: 44px;
+}
+
+.roommate-list {
+    margin-top: 35px;
+}
+
+.roommate-item {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.photo-2 {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+/*边栏区3*/
+.side-con-3 {
+    padding: 14px 14px 14px 14px;
+}
+
+/*边栏区3的列表，包含了图片区域和文字部分
+    在首页上是联系方式栏*/
+.contact-list {
+    margin-top: 30px;
+}
+
+.pic-box {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.pic-box img {
+    width: 65px;
+}
+
+.contact-d {
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-d .class {
+    text-align: left;
+}
+
+/*页脚*/
+.foot {
+    color: #9195A3;
+    margin: 0 auto;
+    text-align: center;
+}

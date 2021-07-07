@@ -1,0 +1,151 @@
+/*人格测试结果框*/
+.trait-con {
+    width: 80%;
+    border: 1px solid #dcdcdc;
+    padding: 15px 40px;
+    font-size: .9em;
+    margin: 30px 30px 30px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*每个结果栏的格式*/
+.trait {
+    padding: 20px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/*相当于结果栏中的标题*/
+.caption {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/*结果的条形百分比容器*/
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/*条形结果，分为左右两边，和为100%*/
+.bar {
+    flex-grow: 1;
+    height: 10px;
+    margin-top: 2px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.filler {
+    background-color: #f5f5f5;
+    height: 12px;
+}
+
+.right-fill {
+    background-color: #c09da7;
+}
+
+/*百分比部分，有左右两边的对立结果*/
+.percentage {
+    flex: 0 0 60px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/*active表示百分比中占比更多的一边，设计了颜色区分*/
+.percentage.active {
+    color: #c09da7;
+}
+
+.percentage.right {
+    text-align: right;
+}
+
+.left-fill {
+    background-color: #f5f5f5;
+}
+
+/*将每个方面的两种相对结果放在一个div中，设置为容器*/
+.trait-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trait-title .title {
+    text-transform: uppercase;
+    color: #9b9faa;
+    font-weight: 600;
+    width: 50px;
+}
+
+.trait-title .title.left {
+    text-align: left;
+}
+
+.trait-title .title.right {
+    text-align: right;
+}
+
+/*集中在以下代码中为不同的结果设置不同的颜色*/
+.trait-title .title.active {
+    color: #c09da7;
+}
+
+.left-fill .filler {
+    background-color: #c09da7;
+}
+
+.trait.mind .bar.right-fill {
+    background-color: #51a9ab;
+}
+
+.trait.mind .percentage.active {
+    color: #51a9ab;
+}
+
+.trait.mind .title.active {
+    color: #51a9ab;
+}
+
+.trait.energy .bar.right-fill {
+    background-color: #d2c3c1;
+}
+
+.trait.energy .percentage.active {
+    color: #d2c3c1;
+}
+
+.trait.energy .title.active {
+    color: #d2c3c1;
+}
+
+.trait.nature .bar.right-fill {
+    background-color: #56ac8a;
+}
+
+.trait.nature .percentage.active {
+    color: #56ac8a;
+}
+
+.trait.nature .title.active {
+    color: #56ac8a;
+}
+
+.trait.identity .bar.right-fill {
+    background-color: #8a7298;
+}
+
+.trait.identity .percentage.active {
+    color: #8a7298;
+}
+
+.trait.identity .title.active {
+    color: #8a7298;
+}

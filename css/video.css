@@ -1,0 +1,150 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+body, p {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+h2 {
+    border-left: solid 10px #871100;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0 15px -30px;
+    padding-left: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+button {
+    background-color: #C9948D;
+    width: 90px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-size: 1.5em;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+}
+
+button a {
+    color: #fff;
+}
+
+button.rg {
+    background-color: #7ca0ae;
+}
+
+div {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*页眉区*/
+header {
+    height: 100px;
+    background-color: #f5edeb;
+}
+
+/*居中 固定宽度 设置背景*/
+header div {
+    height: 100px;
+    background: url(../img/head-b.jpg) no-repeat;
+    background-size: 75%;
+}
+
+/*导航区*/
+nav {
+    height: 41px;
+    background-color: #C9948D;
+}
+
+.nav-name {
+    padding: 0 25px;
+    line-height: 41px;
+}
+
+/**导航区列表形式**/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul :hover {
+    border-color: #C9948D;
+    background: #871100;
+}
+
+li {
+    float: left;
+    position: relative;
+    vertical-align: bottom;
+}
+
+li a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+/*栏目区*/
+section {
+    background-color: #eaeaea;
+}
+
+section div {
+    padding-top: 25px;
+    height: 300px;
+    background: url(../img/con-1.jpg) no-repeat;
+    background-size: 82%;
+}
+
+section p {
+    text-indent: 2em;
+}
+
+/*文本区*/
+article {
+    width: 500px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    float: left;
+}
+
+/*给视频区加了个边框*/
+video {
+    border: 1px solid #dcdcdc;
+    padding: 15px 40px;
+    font-size: .9em;
+    margin: 30px 30px 30px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/*页脚*/
+footer {
+    color: #9195A3;
+    margin: 0 auto;
+    text-align: center;
+}

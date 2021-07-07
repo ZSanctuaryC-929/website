@@ -1,0 +1,119 @@
+#content-2 .inner {
+    height: 1280px;
+}
+
+/*时间轴的容器*/
+.time-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #d7c3b8 100%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/*时间轴的内容框*/
+.time-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px 0;
+    width: 50%;
+}
+
+/*时间轴框内容区，还包含图片、时间、标签、时间轴圆点等几个部分*/
+.time-item-content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 250px;
+    text-align: right;
+}
+
+.time-item-content img {
+    width: 150px;
+}
+
+.time-item-content .tag {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    background: #d7c3b8 none repeat scroll 0% 0%;
+}
+
+.time-item-content p {
+    font-size: 14px;
+    max-width: 90%;
+    margin: 0;
+}
+
+.time-item-content time {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.time-item-content .circle {
+    background-color: #fff;
+    border: 3px solid #ccafa7;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+}
+
+.time-item-content::after {
+    content: ' ';
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+
+/*在这里使用css选择器，将时间轴中的左孩子居左，实现交错的布局*/
+.time-item:nth-child(2n+1) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.time-item:nth-child(2n+1) .time-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.time-item:nth-child(2n+1) .time-item-content .tag {
+    left: auto;
+    right: 5px;
+}
+
+.time-item:nth-child(2n+1) .time-item-content .circle {
+    right: auto;
+    left: -40px;
+}
+
+.time-item:nth-child(2n+1) .time-item-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
